@@ -1,0 +1,4 @@
+httpx==0.24.1
+hopsworks
+joblib
+scikit-learn==1.1.1
