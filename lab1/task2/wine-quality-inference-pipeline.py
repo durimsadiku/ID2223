@@ -45,7 +45,7 @@ def g():
     
     wine = y_pred[y_pred.size - 1]
     
-    wine_url = "https://raw.githubusercontent.com/durimsadiku/ID2223_assets/master/assets/" + str(int(wine)) + ".png"
+    wine_url = "https://raw.githubusercontent.com/durimsadiku/ID2223/master/assets/" + str(int(wine)) + ".png"
     
     img = Image.open(requests.get(wine_url, stream=True).raw)            
     img.save("./latest_wine.png")
@@ -56,7 +56,7 @@ def g():
     df = wine_quality_fg.read() 
     
     label = df.iloc[-1]["quality"]
-    label_url = "https://raw.githubusercontent.com/durimsadiku/ID2223_assets/master/assets/" + str(int(label)) + ".png"
+    label_url = "https://raw.githubusercontent.com/durimsadiku/ID2223/master/assets/" + str(int(label)) + ".png"
     
     img = Image.open(requests.get(label_url, stream=True).raw)            
     img.save("./actual_wine.png")
