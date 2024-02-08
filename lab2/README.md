@@ -4,13 +4,21 @@
 
 Durim Sadiku - <durim@kth.se>
 
+## Introduction
+
+The task was to fine-tune OpenAi's Whipser model for a specific task in a specific language, and use to trained model in a fun, interactive way. All of this was to be done on serverless architecture.
+
+The chosen task was to fine-tune the small version of Whisper to transcribe spoken Swedish into text.
+
+Data preprocessing and training was performed using Google Colab, with training data stored in a private Google Drive. During the training cycle, model checkpoints were uploaded and stored on Huggingface. The model can be trained on-demand from the any checkpoint when new training data is available.
+
 ## Gradio Spaces
+
+The trained model is used as a language learning tool. The user will see an image, speak into their microphone a one-word answer what is depicted in the image (in Swedish), and the model will transcribe their answer. This can be a fun and interactive way to learn basic words, and be expanded upon to include common phrases.
 
 <https://huggingface.co/spaces/DurreSudoku/Whisper_Swedish>
 
 ## Model Improvements
-
-Due to the extreme amount of time it took to train the initial model, I was not able to implement any of the proposals below. Google Colab would not allow me to use GPUs for enough time. I bought computing units to access better GPUs more consistently, and training the model took half of them.
 
 ### Model-Centric
 
